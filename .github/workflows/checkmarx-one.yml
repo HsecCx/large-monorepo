@@ -52,7 +52,7 @@ jobs:
           additional_params: >-
             --report-format sarif 
             --output-path . 
-            -s ./${{ matrix.folder }} 
+            -s ./apps/${{ matrix.folder }} 
             --project-name ${{ matrix.project_name }} 
             --project-tags ${{ matrix.tag }}
 
