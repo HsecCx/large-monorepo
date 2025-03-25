@@ -55,8 +55,4 @@ jobs:
             -s ./apps/${{ matrix.folder }} 
             --project-name ${{ matrix.project_name }} 
             --project-tags ${{ matrix.tag }}
-
-      - name: Upload SARIF for ${{ matrix.project_name }}
-        uses: github/codeql-action/upload-sarif@v3
-        with:
-          sarif_file: cx_result.sarif
+            --debug
